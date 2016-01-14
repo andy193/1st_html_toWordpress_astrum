@@ -25,9 +25,9 @@
                     <section class="post-content">
 
                         <header class="meta">
-                            <h2><a href="blog-post.html"><?php the_title(); ?></a></h2>
+                            <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
                             <ul>
-                                <li>By <a href="<?php the_permalink(); ?>"><?php the_author_posts_link(); ?></a> on <?php the_time('F jS, Y' ); ?></li>
+                                <li>By <a href="<?php the_permalink(); ?>"><?php the_author_posts_link(); ?></a> - <?php the_time('F jS, Y' ); ?></li>
                                 <li><a href="<?php comments_link(); ?>"><?php comments_number('0 Comments', '1 Comments', '% responses'); ?></a></li>
                                 <li><a href="<?php the_permalink(); ?>">Full article</a></li>
                             </ul>
